@@ -1,0 +1,8 @@
+<p>dashboard works!</p>
+<label>Height</label> <br>
+<input matInput [(ngModel)]="height" placeholder="Please Enter Height"> <br> <br>
+<label>Width</label> <br>
+<input matInput [(ngModel)]="width" placeholder="Please Enter Width"> <br> <br>
+<label>Weight</label> <br>
+<input matInput [(ngModel)]="weight" placeholder="Please Enter Weight"> <br> <br>
+<button (click)="btnCalculate()" mat-button>Calculate: </button> <label>{{calculated}}</label>

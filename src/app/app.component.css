@@ -1,0 +1,18 @@
+.button {
+  background-color: #4699da;
+  color: #020507;
+  padding: 7px;
+  margin-right: 5px;
+  border-radius: 5px;
+  text-decoration: none;
+}
+
+.active-button {
+  background-color: #4699da;
+  color: #020507;
+  padding: 7px;
+  margin-right: 5px;
+  border-radius: 5px;
+  border: 2px solid;
+  text-decoration: none;
+}
