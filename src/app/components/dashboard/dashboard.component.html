@@ -1,16 +1,16 @@
 <div class="layout" fxFlex="100%">
-  <div class="leftColumn" fxFlex="30%">
+  <div class="leftColumn" fxFlex="30%" >
     <h1>Tools</h1>
-    <mat-form-field>
-      <input matInput appearance="fill" [(ngModel)]="height" placeholder="Height">
+    <mat-form-field style="width:100px">
+      <input matInput  appearance="fill" [(ngModel)]="height" placeholder="Height">
     </mat-form-field>
     <br>
-    <mat-form-field>
+    <mat-form-field style="width:100px">
       <input matInput [(ngModel)]="weight" placeholder="Weight">
     </mat-form-field>
     <br>
     <div>
-      <button mat-fab color="primary" class="btnCalc" (click)="btnCalculate()">Calculate: </button>
+      <button mat-fab color="primary" class="btnCalc" (click)="btnCalculate()">Calculate: </button><br>
       <button mat-fab color="primary" class="btnMail" routerLink="../mailing">Mail: </button>
     </div>
   </div>
