@@ -10,7 +10,7 @@
 .leftColumn {
   background-color: rgb(123, 124, 123);
   height: 50%;
-  width: 30%;
+  width: 35%;
   padding: 10px;
   margin: 10px;
 }
@@ -19,12 +19,13 @@
 .rightColumn{
   background-color: rgb(47, 117, 145);
   height: 50%;
-  width: 70%;
+  width: 65%;
   padding: 10px;
   margin: 10px;
 }
 
 .btnCalc{
+  margin: 10px;
   height: 60px;
   width: 110px;
 }
