@@ -20,13 +20,16 @@
       <label>BMI: </label>
       {{calculated}}
     </div>
+    <br>
     <div>
-      <label>Weight</label>
-      <input matInput [(ngModel)]="weight" placeholder="Please Enter Weight">
+      <label *ngIf="good">Well done you are in good Shape </label>
+      <label *ngIf="notGood">Oh Shit!, Dian get yourself in order brav,
+        Try and Get BMI Lower than 25: </label>
     </div>
     <div>
       <button mat-icon-button (click)="btnCalculate()" color="primary" aria-label="Example icon-button with a heart icon">
-        <mat-icon>favorite</mat-icon>
+        <mat-icon *ngIf="good">favorite</mat-icon>
+        <mat-icon style="color:red;" *ngIf="notGood">error</mat-icon>
       </button>
 
     </div>
