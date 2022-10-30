@@ -1,0 +1,36 @@
+.layout{
+  display: flex;
+  height: calc(100% - 84px); /* composite for Toolbar and Header*/
+  background-color: rgb(165, 165, 165);
+  align-content: center;
+  justify-content: center;
+  padding: 10px;
+
+}
+.leftColumn {
+  background-color: rgb(123, 124, 123);
+  height: 50%;
+  width: 30%;
+  padding: 10px;
+  margin: 10px;
+}
+
+
+.rightColumn{
+  background-color: rgb(47, 117, 145);
+  height: 50%;
+  width: 70%;
+  padding: 10px;
+  margin: 10px;
+}
+
+.btnCalc{
+  height: 60px;
+  width: 110px;
+}
+
+.btnMail{
+  margin-left: 10px;
+  height: 60px;
+    width: 110px;
+}
