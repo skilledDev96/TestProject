@@ -16,6 +16,7 @@ export class DashboardComponent implements OnInit {
   ngOnInit(): void {}
 
   btnCalculate() {
-    return (this.calculated = this.height * this.width * this.weight);
+    this.calculated = this.width + this.height;
   }
+  btnSendMail() {}
 }

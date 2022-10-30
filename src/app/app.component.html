@@ -1,5 +1,5 @@
 
-<mat-drawer-container class="example-container" autosize>
+<mat-drawer-container class="example-container" autosize style="height:100%;background-color: blue">
   <mat-toolbar>
     <button (click)="drawer.toggle()" mat-icon-button class="example-icon" aria-label="Example icon-button with menu icon">
       <mat-icon>menu</mat-icon>
@@ -17,10 +17,8 @@
   <mat-drawer #drawer class="example-sidenav" mode="side">
     <p>MENU</p>
     <p *ngIf="btnPressed">Lorem, ipsum dolor sit amet consectetur.</p>
-    <a class="button" mat-raised-button routerLink="/dashboard" routerLinkActive="active-button">Dashboard</a><br>
-    <a class="button" mat-raised-button routerLink="/mailing" routerLinkActive="active-button">Mailing</a>
+    <a class="button" (click)="setTitle('DashBoard')" mat-raised-button routerLink="/dashboard" routerLinkActive="active-button">Dashboard</a><br>
+    <a class="button" (click)="setTitle('Mailing')" mat-raised-button routerLink="/mailing" routerLinkActive="active-button">Mailing</a>
   </mat-drawer>
-  <h1>TESTING</h1>
-
   <router-outlet></router-outlet>
 </mat-drawer-container>

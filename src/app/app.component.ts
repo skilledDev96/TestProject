@@ -7,9 +7,14 @@ import { Component } from '@angular/core';
 })
 export class AppComponent {
   title = 'TestProject';
+  RouteTitle: string = 'Dashboard';
   btnPressed: boolean = false;
 
   btnclick() {
     this.btnPressed = !this.btnPressed;
+  }
+
+  setTitle(name: string) {
+    this.RouteTitle = name;
   }
 }
